@@ -16,3 +16,8 @@ local.properties
 
 # Evidencia visual de revision (no versionar)
 /.impeccable/review/
+
+# Firma: nunca versionar el keystore ni sus credenciales
+*.jks
+*.keystore
+keystore.properties

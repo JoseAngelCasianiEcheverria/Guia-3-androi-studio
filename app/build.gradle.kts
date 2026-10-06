@@ -1,6 +1,16 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
 }
+
+val archivoDeClaves = rootProject.file("keystore.properties")
+val claves = Properties().apply {
+    if (archivoDeClaves.exists()) {
+        archivoDeClaves.inputStream().use { load(it) }
+    }
+}
+val hayFirma = claves.containsKey("storeFile")
 
 android {
     namespace = "com.example.taller3"
@@ -18,10 +28,25 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        if (hayFirma) {
+            create("release") {
+                storeFile = file(claves.getProperty("storeFile"))
+                storePassword = claves.getProperty("storePassword")
+                keyAlias = claves.getProperty("keyAlias")
+                keyPassword = claves.getProperty("keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
             optimization {
                 enable = false
+            }
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            if (hayFirma) {
+                signingConfig = signingConfigs.getByName("release")
             }
         }
     }
