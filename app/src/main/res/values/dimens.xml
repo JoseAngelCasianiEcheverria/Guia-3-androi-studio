@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="espacio_xs">4dp</dimen>
+    <dimen name="espacio_sm">8dp</dimen>
+    <dimen name="espacio_md">16dp</dimen>
+    <dimen name="espacio_lg">24dp</dimen>
+    <dimen name="espacio_xl">32dp</dimen>
+
+    <dimen name="fila_altura_minima">64dp</dimen>
+    <dimen name="campo_altura">56dp</dimen>
+    <dimen name="boton_altura">56dp</dimen>
+    <dimen name="objetivo_toque">48dp</dimen>
+    <dimen name="marca_lamina">52dp</dimen>
+    <dimen name="icono_estado">56dp</dimen>
+    <dimen name="ancho_maximo_contenido">480dp</dimen>
+    <dimen name="grosor_regla">1dp</dimen>
+    <dimen name="grosor_sello">1.5dp</dimen>
+    <dimen name="radio_control">4dp</dimen>
+    <dimen name="radio_lamina">12dp</dimen>
+</resources>

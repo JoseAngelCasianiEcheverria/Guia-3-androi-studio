@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Usuarios</string>
+    <string name="url_base">http://192.168.1.8/Phpproyecto/</string>
+    <string name="ruta_servicio">crud/operacion.php</string>
+    <string name="ruta_descubrimiento">descubrir.php</string>
+
+    <string name="marca_organizacion">GESTIÓN DE USUARIOS</string>
+    <string name="subtitulo_organizacion">Lista de contactos servida por PHP + MySQL</string>
+
+    <string name="etiqueta_correo">Correo</string>
+    <string name="etiqueta_clave">Contraseña</string>
+    <string name="etiqueta_nombre">Nombre</string>
+    <string name="ayuda_correo">Es el código y la llave de esta agenda</string>
+    <string name="ayuda_clave">Se compara cifrada, nunca se devuelve</string>
+    <string name="ayuda_nombre">Como aparece en la lista</string>
+
+    <string name="accion_ingresar">Ingresar</string>
+    <string name="accion_crear_ficha">Crear ficha</string>
+    <string name="accion_salir">Salir</string>
+    <string name="caso_registro">No tengo cuenta: crear ficha</string>
+    <string name="etiqueta_servidor">Servidor</string>
+    <string name="ayuda_servidor">Equipo donde corre PHP, con barra final</string>
+    <string name="sello_servidor">Servidor %1$s</string>
+    <string name="accion_guardar">Guardar</string>
+    <string name="accion_eliminar">Eliminar</string>
+    <string name="accion_cancelar">Cancelar</string>
+    <string name="accion_agregar">Agregar usuario</string>
+    <string name="accion_reintentar">Reintentar</string>
+    <string name="btn_editar_tus_datos">Edita tus datos</string>
+
+    <string name="titulo_lista">Usuarios</string>
+    <string name="titulo_nuevo_usuario">Nuevo usuario</string>
+    <string name="titulo_editar_usuario">Editar usuario</string>
+    <string name="seccion_datos">Datos</string>
+    <string name="seccion_lista">Todos los usuarios</string>
+
+    <plurals name="registros">
+        <item quantity="one">%d registro</item>
+        <item quantity="other">%d registros</item>
+    </plurals>
+
+    <string name="sello_recibido">Recibido</string>
+    <string name="sello_creado">Creado</string>
+    <string name="sello_modificado">Modificado</string>
+    <string name="sello_borrado">Borrado</string>
+    <string name="sello_no_recibido">No recibido</string>
+
+    <string name="vacio_titulo">Sin registros</string>
+    <string name="vacio_detalle">La agenda está vacía. Agrega el primer usuario con el botón de abajo.</string>
+    <string name="vacio_filtro">Ninguna ficha empieza por esa letra.</string>
+
+    <string name="error_conexion_titulo">Sin conexión</string>
+    <string name="error_conexion_detalle">No responde el servidor PHP. Levanta Apache y MySQL con iniciar-entorno-XAMPP.bat y reintenta.</string>
+
+    <string name="dialogo_eliminar_titulo">Eliminar</string>
+    <string name="dialogo_eliminar_mensaje">Eliminar este registro: %1$s</string>
+    <string name="dialogo_eliminar_confirmar">Eliminar</string>
+    <string name="dialogo_cancelar">Cancelar</string>
+
+    <string name="dialogo_registro_titulo">Sin registro</string>
+    <string name="dialogo_registro_mensaje">No hay ninguna cuenta con ese correo. ¿La creas ahora?</string>
+    <string name="dialogo_registro_confirmar">Crear cuenta</string>
+
+    <string name="aviso_campos_vacios">Completa todos los datos</string>
+    <string name="indice_etiqueta">Índice por inicial</string>
+    <string name="marca_organizacion_descripcion">Marca de la organización</string>
+</resources>
